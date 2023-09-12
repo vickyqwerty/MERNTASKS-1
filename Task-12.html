@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .container{
+            height: 85vh;
+            width: 85%;
+            background-color: rgb(183, 16, 71);
+            margin:50px auto;
+            position: relative;
+        }
+        .formContainer{
+            height: 70vh;
+            width: 55%;
+            position: absolute;
+            top: 60px;
+            left: 270px;
+            display: flex;
+            align-items: center;
+             background-color: rgb(70, 12, 31);
+        }
+        label{
+            margin-bottom: 20px;
+           display:inline-block ;
+           width: 150px;
+            color: white;
+            margin-left: 150px;
+        }
+        input,select{
+            margin-bottom: 20px;
+        }
+        span{
+            color:white;
+        }
+        .about{
+            height: 20px;
+        }
+        .submit{
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            width:350px ;
+            margin-left: 150px;
+            height: 50px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="formContainer">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" placeholder="your name" required><br>
+                <label for="email">Email:</label>
+                <input type="email" placeholder="your email" required><br>
+                <label for="password">Password:</label>
+                <input type="password" required><br>
+                <label for="phone number">Phone Number:</label>
+                <input type="tel" required><br>
+                <label for="sex">Gender:</label>
+                <span>Male:</span> <input type="radio" name="gender"required>
+                <span>Female:</span> <input type="radio" name="gender" required>
+                <span>Other:</span> <input type="radio" name="gender" required><br>
+                <label for="lang">language</label>
+                <select name="language" required >
+                <option value="telugu">Telugu</option>
+                <option value="Hindi">Hindi</option>
+                <option value="Tamil">Tamil</option>
+                <option value="Other">Other</option>
+                </select><br>
+                <label for="pincode">Zip Code:</label>
+                <input type="number" ><br>
+                <label for="about">About:</label required>
+                <input type="text" placeholder="Write about yourself" class="about" required><br>
+                <input type="submit" value="Register" class="submit"><br>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

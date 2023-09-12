@@ -1,0 +1,106 @@
+<html>
+<head>
+<style>
+body{
+    padding: 10%;
+}
+.verticalul {
+  list-style-type: none;
+  padding: 0;
+  width: 200px;
+  background-color: lightblue;
+  margin-bottom: 0px;
+}
+
+.verticalli a {
+  display: block;
+  color: blue;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.verticalli a.active1 {
+  background-color: orange;
+  color: white;
+}
+
+.verticalli a:hover:not(.active) {
+  background-color: black;
+  color: white;
+}
+.parent{
+    display: flex;
+}
+.child1{
+    border: 1px solid black;
+    margin-top: 5%;
+    margin-right: 3%;
+}
+.child2{
+    border: 1px solid black;
+    padding-top: 0.8%;
+    padding-left: 0.8%;
+    padding-bottom: 0.8%;
+    padding-right: 0px;
+    height: 2%;
+    margin-top: 6%;
+    
+}
+.horizantalul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #dadada;
+}
+
+.horizantalli {
+  float: left;
+  border-right:1px solid blue;
+}
+
+.horizaltalli:last-child {
+  border-right: none;
+}
+
+.horizantalli a {
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.horizantalli a:hover:not(.active) {
+  background-color: black;
+}
+
+.active2 {
+  background-color: rgb(131, 131, 131);
+}
+</style>
+</head>
+<body>
+    <div class="parent">
+        <h3>Vertical Navigation Bar:</h3>
+        <div class="child1">
+        <ul class="verticalul">
+            <li class="verticalli"><a class="active1" href="#Home">Home</a></li>
+            <li class="verticalli"><a href="#Java">Java</a></li>
+            <li class="verticalli"><a href="#CSS">CSS</a></li>
+            <li class="verticalli"><a href="#HTML">HTML</a></li>
+            <li class="verticalli"><a href="#Bootstrap">Bootstrap</a></li>
+          </ul>
+        </div>
+        <h3>Horizantal Navigation Bar:</h3>
+        <div class="child2">
+            <ul class="horizantalul">
+                <li class="horizantalli"><a class="active2" href="#home">Home</a></li>
+                <li class="horizantalli"><a href="#Java">Java</a></li>
+                <li class="horizantalli"><a href="#CSS">CSS</a></li>
+                <li class="horizantalli"><a href="#Bootstrap">Bootstrap</a></li>
+              </ul>
+        </div>
+    </div>
+</body>
+</html>

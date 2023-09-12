@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 500px;
+    margin: 80px auto;
+    padding: 50px 50px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  }
+ .image{
+    display: block;
+    height: 150px;
+    width: 150px;
+    margin: auto;
+    margin-bottom: 10px;
+ }
+  .form-group  {
+    
+    margin-bottom: 15px;
+  }
+  
+  label{
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+   
+  
+  input[type="text"],input[type="password"]{
+    width: 95%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  }
+
+  button {
+    display: block;
+    background-color: green;
+    color: #fff;
+    margin: auto;
+    height: 40px;
+    
+    text-align: center;
+    border: none;
+   
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .login-btn{
+    width: 100%;
+  }
+
+   .go-back{
+    background-color:lightgrey;
+    max-width: 500px ;
+    height:40px;
+    margin: 5px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+  }
+  .cancel{
+    float: left;
+    color: #fff;
+    background-color: red;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 5px;
+  }
+  .fpswd{
+    float: right;
+    color: black;
+  
+ 
+  }
+    </style>
+</head>
+<body>
+  <div class="container">
+      <img  class=" image" src="https://cdn-icons-png.flaticon.com/512/201/201634.png" alt="profile image">
+  <form action="bank.html">
+    <div class="form-group">
+      <label class="form-input" for="name">UserName</label>
+      <input type="text" id="name" name="name" placeholder="Enter Username" required >
+    </div>
+    <div class="form-group">
+      <label class="form-input" for="accnum">Password</label>
+      <input type="password"  placeholder="Enter Password" required>
+    </div><br>
+
+    <button type="submit" class="login-btn">Login</button><br>
+    
+      <input  type="checkbox" class="checkbox"> Remember me <br>
+    <div class="go-back">
+        <button type="submit" class="cancel">Cancel</button>
+        <a href="#" class="fpswd">Forgotpassword?</a></span>
+    </div>
+  </form>
+</div>
+</body>
+</html>

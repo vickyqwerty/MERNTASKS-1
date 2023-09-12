@@ -1,0 +1,88 @@
+<html>
+    <head><h1 style="margin-left:40%; color: rgb(40, 159, 199);">Registration Form</h1></head>
+    <style>
+        td,table,th{
+            border-style: solid; 
+            border-collapse: collapse;
+        }
+        .text{
+            width: 100%;
+            height: fit-content;
+            border-color: aliceblue;
+        }
+        textarea{
+            border-color: aliceblue;
+        }
+        select{
+            width: 100%;
+            height: fit-content;
+            border-color: aliceblue;
+        }
+    </style>
+    <body>
+        <table style="width:50%; margin: auto;">
+            <tr>
+                <th style="width:25%">First Name</th>
+                <td><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <th>Last Name</th>
+                <td><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <th>Password</th>
+                <td><input class="text" type="password"></td>
+            </tr>
+            <tr>
+                <th>Re-enter Password</th>
+                <td><input class="text" type="password"></td>
+            </tr>
+            <tr>
+                <th rowspan="2">Gender:</th>
+                <td><input type="radio" name="Gender">Male</td>
+            </tr>
+            <tr>
+                <td><input type="radio" name="Gender">Female</td>
+            </tr>
+            <tr>
+                <th>Phone Number</th>
+                <td><input class="text" type="tel"></td>
+            </tr>
+            <tr style="height: 70px;">
+                <th>Address</th>
+                <td><textarea name="" id="" cols="75" rows="8"></textarea></td>
+            </tr>
+            <tr>
+                <th>State</th>
+                <td><input class="text" type="text"></td>
+            </tr>
+            <tr>
+                <th>Country</th>
+                <td><select name="Country">
+                    <option>Choose your country</option>
+                    <option>America</option>
+                    <option>Australia</option>
+                    <option>Canada</option>
+                    <option>England</option>
+                    <option>India</option>
+                    <option>Newzealand</option>
+                </select></td>
+            </tr>
+            <tr>
+                <th>Known Languages</th>
+                <td><input type="radio" >English <input type="radio">Kannada <input type="radio">Hindi <input type="radio">Telugu</td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="checkbox"> Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td style="text-align: right;" colspan="2">Log in to <a href="https://r.search.yahoo.com/_ylt=AwrKGkZg3O1kFLgMVNm7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3Ny/RV=2/RE=1693338848/RO=10/RU=https%3a%2f%2fethnus.com%2f/RK=2/RS=FKnD9oSnLwWVFKOz2RWXMlZyJcQ-" target="_blank">Ethnus</a> website</td>
+            </tr>
+        </table>
+        <button style="margin-top:20px; margin-left: 48%; width:75px;">Register</button>
+    </body>
+</html>
